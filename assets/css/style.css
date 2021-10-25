@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@700&family=Montserrat:wght@400;500;600&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Chivo', sans-serif; */
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+header {
+  padding: 5px 0;
+  background: #D01A1A;
+}
+
+footer {
+  padding: 9px 0;
+  background: #D01A1A;
+}
+
+.header-start span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.header-end {
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-socials {
+  display: flex;
+}
+
+.header-socials a {
+  display: inline-block;
+  margin-right: 22px;
+}
+
+.header-socials a:last-child {
+  margin-right: 0;
+}
+
+.header-buttons {
+  margin-left: 88px;
+  display: flex;
+}
+
+.b_tor {
+  background: #000000;
+  border: none;
+  padding: 9px;
+  padding-left: 12px;
+  border-radius: 74px 0px 0px 74px;
+  color: #FFFFFF;
+}
+
+.b_web {
+  background: #FFFFFF;
+  border: none;
+  padding: 9px;
+  padding-right: 12px;
+  border-radius: 0 74px 74px 0;
+  color: #000000;
+}
+
+main.chat {
+  margin-top: 130px;
+}
+
+.chat-head {
+  display: flex;
+  align-items: center;
+}
+
+.chat-head_img {
+  margin-right: 118px;
+}
+
+.checkbox-red {
+  display: inline-block;
+  line-height: 28px;
+  position: relative;
+  user-select: none;
+  height: 79px;
+}
+
+.checkbox-red .checkbox-red-switch {
+  display: inline-block;
+  height: 78px;
+  width: 331px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 19px;
+  background: RGB(231, 141, 141);
+  transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.checkbox-red .checkbox-red-switch:before {
+  content: attr(data-label-on);
+  display: inline-block;
+  box-sizing: border-box;
+  width: auto;
+  padding: 0 12px;
+  position: absolute;
+  top: 23px;
+  left: 155px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+
+.checkbox-red .checkbox-red-switch:after {
+  content: attr(data-label-off);
+  display: inline-block;
+  box-sizing: border-box;
+  width: auto;
+  padding: 21px 31px;
+  border-radius: 19px;
+  position: absolute;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  background: white;
+  font-size: 28px;
+  line-height: 34px;
+  border: 1px solid #D01A1A;
+  color: #D01A1A;
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.checkbox-red input[type="checkbox"] {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox-red input[type="checkbox"]:checked+.checkbox-red-switch:before {
+  content: attr(data-label-off);
+  left: 20px;
+}
+
+.checkbox-red input[type="checkbox"]:checked+.checkbox-red-switch:after {
+  content: attr(data-label-on);
+  transform: translate3d(141px, 0, 0);
+}
+
+.checkbox-red input[type="checkbox"]:not(:disabled)+.checkbox-red-switch:hover {
+  cursor: pointer;
+}
+
+.chat-body {
+  margin-top: 100px;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 19px;
+}
+
+.chats {
+  max-width: 545px;
+  background: #000000;
+
+}
+
+.chats-head {
+  max-width: 545px;
+  padding: 50px 44px;
+}
+
+.chats-head input {
+  width: 100%;
+}

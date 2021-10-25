@@ -4,7 +4,111 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Fulix - Chat (support)</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="header-content">
+              <div class="header-start">
+                <span>Feedback</span>
+              </div>
+              <div class="header-end">
+                <div class="header-socials">
+                  <a href="#">
+                    <img src="./assets/images/twitter.svg" alt="twitter" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/telegram.svg" alt="telegram" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/facebook.svg" alt="facebook" />
+                  </a>
+                </div>
+                <div class="header-buttons">
+                  <button class="b_tor">TOR</button>
+                  <button class="b_web">WEB</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="chat">
+        <div class="container">
+          <div class="row">
+            <div class="chat-content">
+              <div class="chat-head">
+                <img
+                  class="chat-head_img"
+                  src="./assets/images/Logo.svg"
+                  alt=""
+                />
+                <label class="checkbox-red">
+                  <input id="change" type="checkbox" />
+                  <span
+                    class="checkbox-red-switch"
+                    data-label-on="SECTION"
+                    data-label-off="CHAT"
+                  ></span>
+                </label>
+              </div>
+              <div class="chat-body">
+                <div class="chats">
+                  <div class="chats-head">
+                    <input type="text" name="" id="" />
+                  </div>
+                </div>
+                <div class="chats-active"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="header-content">
+              <div class="header-start">
+                <span>Feedback</span>
+              </div>
+              <div class="header-end">
+                <div class="header-socials">
+                  <a href="#">
+                    <img src="./assets/images/twitter.svg" alt="twitter" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/telegram.svg" alt="telegram" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/facebook.svg" alt="facebook" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    $(window).keyup(function (e) {
+      var target = $(".checkbox-red input:focus");
+      if (e.keyCode == 9 && $(target).length) {
+        $(target).parent().addClass("focused");
+      }
+    });
+    // change.onclick = function () {
+    //   window.location.href = "https://google.com";
+    // };
+    $(".checkbox-red input").focusout(function () {
+      $(this).parent().removeClass("focused");
+    });
+  </script>
 </html>
