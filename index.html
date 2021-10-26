@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Fulix - Chat (support)</title>
   </head>
+
   <body>
     <div class="wrapper">
       <header>
@@ -51,10 +51,198 @@
           <div class="chat-body">
             <div class="chats">
               <div class="chats-head">
-                <input type="text" name="" id="" />
+                <form class="chats-search">
+                  <input
+                    class="chats-search_input"
+                    type="text"
+                    placeholder="Search..."
+                  />
+                  <button class="chats-search_button" type="submit"></button>
+                </form>
+              </div>
+              <div class="chats-content">
+                <div id="tabsDiv">
+                  <ul class="ulClass" style="height: 300px">
+                    <li>
+                      <button
+                        class="linkClass"
+                        onclick="displayContent(event, 'chat1')"
+                      >
+                        <div class="subject_name online">Name</div>
+                        <div class="subject_preview">
+                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
+                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
+                          amet, dolor sitconsectetuer adipiscing elit. Lorem
+                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
+                          elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit.
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="linkClass"
+                        onclick="displayContent(event, 'chat2')"
+                      >
+                        <div class="subject_name">Name</div>
+                        <div class="subject_preview">
+                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
+                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
+                          amet, dolor sitconsectetuer adipiscing elit. Lorem
+                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
+                          elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit.
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="linkClass"
+                        onclick="displayContent(event, 'chat3')"
+                      >
+                        <div class="subject_name">Name</div>
+                        <div class="subject_preview">
+                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
+                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
+                          amet, dolor sitconsectetuer adipiscing elit. Lorem
+                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
+                          elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit.
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="linkClass"
+                        onclick="displayContent(event, 'chat4')"
+                      >
+                        <div class="subject_name online">Name</div>
+                        <div class="subject_preview">
+                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
+                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
+                          amet, dolor sitconsectetuer adipiscing elit. Lorem
+                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
+                          elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit.
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="linkClass"
+                        onclick="displayContent(event, 'chat5')"
+                      >
+                        <div class="subject_name online">Name</div>
+                        <div class="subject_preview">
+                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
+                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
+                          amet, dolor sitconsectetuer adipiscing elit. Lorem
+                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
+                          elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit.
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="linkClass"
+                        onclick="displayContent(event, 'chat6')"
+                      >
+                        <div class="subject_name online">Name</div>
+                        <div class="subject_preview">
+                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
+                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
+                          amet, dolor sitconsectetuer adipiscing elit. Lorem
+                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
+                          elit. Lorem ipsum dolor sit amet, dolor
+                          sitconsectetuer adipiscing elit.
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="chats-active"></div>
+            <div class="chats-active">
+              <div id="chat1" class="contentClass">
+                <div class="timer">
+                  <div id="timer"></div>
+                </div>
+                <div class="subject-chat_headname">
+                  <h3>Example text</h3>
+                  <h4>example text</h4>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing.Lorem
+                  ipsum dolor sit amet, consectetuer adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetuer adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetuer adipiscing elit. Lorem
+                  ipsum dolor sit amet, consectetuer adipiscing.
+                </p>
+              </div>
+              <div id="chat2" class="contentClass">
+                <h3>Practice</h3>
+                <p>
+                  Asymptotic Analysis is the big idea that handles above issues
+                  in analyzing algorithms. In Asymptotic Analysis, we evaluate
+                  the performance of an algorithm in terms of input size (we
+                  don’t measure the actual running time). We calculate, how does
+                  the time (or space) taken by an algorithm increases with the
+                  input size.
+                </p>
+              </div>
+              <div id="chat3" class="contentClass">
+                <h3>Python</h3>
+                <p>
+                  Python is a high-level, general-purpose and a very popular
+                  programming language. Python programming language (latest
+                  Python 3) is being used in web development, Machine Learning
+                  applications, along with all cutting edge technology in
+                  Software Industry. Python Programming Language is very well
+                  suited for Beginners, also for experienced programmers with
+                  other programming languages like C++ and Java.
+                </p>
+              </div>
+              <div id="chat4" class="contentClass">
+                <h3>Greedy Algorithms</h3>
+                <p>
+                  Greedy is an algorithmic paradigm that builds up a solution
+                  piece by piece,always choosing the next piece that offers the
+                  most obvious and immediate benefit. So the problems where
+                  choosing locally optimal also leads to global solution are
+                  best fit for Greedy.
+                </p>
+              </div>
+              <div id="chat5" class="contentClass">
+                <h3>Greedy Algorithms</h3>
+                <p>
+                  Greedy is an algorithmic paradigm that builds up a solution
+                  piece by piece,always choosing the next piece that offers the
+                  most obvious and immediate benefit. So the problems where
+                  choosing locally optimal also leads to global solution are
+                  best fit for Greedy.
+                </p>
+              </div>
+              <div id="chat6" class="contentClass">
+                <h3>Greedy Algorithms</h3>
+                <p>
+                  Greedy is an algorithmic paradigm that builds up a solution
+                  piece by piece,always choosing the next piece that offers the
+                  most obvious and immediate benefit. So the problems where
+                  choosing locally optimal also leads to global solution are
+                  best fit for Greedy.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -93,5 +281,31 @@
     $(".checkbox-red input").focusout(function () {
       $(this).parent().removeClass("focused");
     });
+    function displayContent(event, contentNameID) {
+      let content = document.getElementsByClassName("contentClass");
+      let totalCount = content.length;
+
+      // Loop through the content class
+      // and hide the tabs first
+      for (let count = 0; count < totalCount; count++) {
+        content[count].style.display = "none";
+      }
+
+      let links = document.getElementsByClassName("linkClass");
+      totalLinks = links.length;
+
+      // Loop through the links and
+      // remove the active class
+      for (let count = 0; count < totalLinks; count++) {
+        links[count].classList.remove("active");
+      }
+
+      // Display the current tab
+      document.getElementById(contentNameID).style.display = "block";
+
+      // Add the active class to the current tab
+      event.currentTarget.classList.add("active");
+    }
   </script>
+  <script src="./assets/js/timer.js" prefer></script>
 </html>
