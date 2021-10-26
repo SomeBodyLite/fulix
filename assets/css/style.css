@@ -191,6 +191,7 @@ main.chat {
 .chat-body {
   margin-top: 100px;
   display: flex;
+  margin-bottom: 100px;
 }
 
 .chats {
@@ -286,7 +287,7 @@ main.chat {
 
 .contentClass {
   display: none;
-  padding: 0px 15px;
+  /* padding: 0px 15px; */
   border-style: none;
   height: 100%;
 }
@@ -381,7 +382,7 @@ main.chat {
 .subject-chat_headname {
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .subject-chat_headname h3 {
@@ -396,4 +397,118 @@ main.chat {
   font-size: 17px;
   line-height: 100%;
   color: #000000;
+}
+
+.subject-chat_messenger {
+  padding: 0 50px;
+  overflow: auto;
+  height: 525px;
+}
+
+.message_head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.m_message {
+  margin-bottom: 80px;
+}
+
+.m_message .message_name {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.messenger_admin .message_head {
+  flex-direction: row-reverse;
+}
+
+.messenger_user .message_name {
+  margin-right: 18px;
+}
+
+.messenger_admin .message_name {
+  margin-left: 18px;
+}
+
+.messenger_user .message_status {
+  margin-right: 29px;
+}
+
+.messenger_admin .message_status {
+  margin-left: 29px;
+}
+
+.message_time {
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.message_block {
+  background: rgba(215, 215, 215, 0.5);
+  padding: 20px 30px;
+}
+
+.messenger_user .message_block {
+  border-radius: 0px 19px 19px 19px;
+}
+
+.messenger_admin .message_block {
+  border-radius: 19px 0px 19px 19px;
+}
+
+.message_text {
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.messenger_field {
+  position: relative;
+  padding: 0 68px 0 50px;
+}
+
+.messenger_input {
+  border: 1.5px solid #000000;
+  border-radius: 19px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 55px;
+  padding-left: 70px;
+  width: 100%;
+}
+
+.messenger_input__sendbutton {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 69px;
+  padding: 18px;
+}
+
+.inp_file_label {
+  position: absolute;
+  padding: 19px;
+  cursor: pointer;
+}
+
+.inp_file_label button {
+  border: none;
+  background: none;
+}
+
+.messenger_input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.subject-chat_input {
+  padding: 40px 0 40px 0;
 }
