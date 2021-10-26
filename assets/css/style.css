@@ -12,7 +12,7 @@ html {
 
 header,
 footer {
-  width: max-content;
+  width: min-content;
 }
 
 .wrapper {
