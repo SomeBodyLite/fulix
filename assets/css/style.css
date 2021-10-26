@@ -240,6 +240,7 @@ main.chat {
 .chats-content {
   height: 800px;
   overflow: auto;
+  color-scheme: dark;
 }
 
 .chats-active {
