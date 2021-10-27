@@ -37,6 +37,14 @@ button {
     width: 1000px;
   }
 
+  .chat-body {
+    width: 85%;
+  }
+
+  .chat-head {
+    width: 85%;
+  }
+
   html {
     font-size: 12px;
   }
