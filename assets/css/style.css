@@ -12,7 +12,9 @@ body {
 html {
   font-family: 'Montserrat', sans-serif;
   /* font-family: 'Chivo', sans-serif; */
+  font-size: 13px;
 }
+
 
 button {
   font-family: inherit;
@@ -30,31 +32,44 @@ button {
   margin: 0 auto;
 }
 
-@media (max-width:1300px) {
+@media (max-width:1400px) {
   .wrp {
-    width: 1050px;
+    width: 1000px;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:1200px) {
+  .wrp {
+    width: 800px;
+  }
+
+  html {
+    font-size: 10px;
   }
 }
 
 main {
   flex: 1 1 auto;
-  transform: scale(78%);
 }
 
 header {
-  padding: 5px 0;
+  padding: 0.3125rem 0;
   background: #D01A1A;
 }
 
 footer {
-  padding: 9px 0;
+  padding: 0.5625rem 0;
   background: #D01A1A;
 }
 
 .header-start span {
   font-weight: 500;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
   color: #FFFFFF;
 }
 
@@ -75,7 +90,7 @@ footer {
 
 .header-socials a {
   display: inline-block;
-  margin-right: 22px;
+  margin-right: 1.375rem;
 }
 
 .header-socials a:last-child {
@@ -83,30 +98,30 @@ footer {
 }
 
 .header-buttons {
-  margin-left: 88px;
+  margin-left: 5.5rem;
   display: flex;
 }
 
 .b_tor {
   background: #000000;
   border: none;
-  padding: 9px;
-  padding-left: 12px;
-  border-radius: 74px 0px 0px 74px;
+  padding: 0.5625rem;
+  padding-left: 0.75rem;
+  border-radius: 4.625rem 0px 0px 4.625rem;
   color: #FFFFFF;
 }
 
 .b_web {
   background: #FFFFFF;
   border: none;
-  padding: 9px;
-  padding-right: 12px;
-  border-radius: 0 74px 74px 0;
+  padding: 0.5625rem;
+  padding-right: 0.75rem;
+  border-radius: 0 4.625rem 4.625rem 0;
   color: #000000;
 }
 
 main.chat {
-  /* margin-top: 130px; */
+  margin-top: 8.125rem;
 }
 
 .chat-head {
@@ -115,24 +130,24 @@ main.chat {
 }
 
 .chat-head_img {
-  margin-right: 118px;
+  margin-right: 7.375rem;
 }
 
 .checkbox-red {
   display: inline-block;
-  line-height: 28px;
+  line-height: 1.75rem;
   position: relative;
   user-select: none;
-  height: 79px;
+  height: 4.9375rem;
 }
 
 .checkbox-red .checkbox-red-switch {
   display: inline-block;
-  height: 78px;
-  width: 331px;
+  height: 4.875rem;
+  width: 20.6875rem;
   box-sizing: border-box;
   position: relative;
-  border-radius: 19px;
+  border-radius: 1.1875rem;
   background: RGB(231, 141, 141);
   transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
 }
@@ -144,12 +159,12 @@ main.chat {
   width: auto;
   padding: 0 12px;
   position: absolute;
-  top: 23px;
-  left: 155px;
+  top: 1.4375rem;
+  left: 9.6875rem;
   text-transform: uppercase;
   text-align: center;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
   color: #FFFFFF;
 }
 
@@ -158,15 +173,15 @@ main.chat {
   display: inline-block;
   box-sizing: border-box;
   width: auto;
-  padding: 21px 31px;
-  border-radius: 19px;
+  padding: 1.3125rem 1.9375rem;
+  border-radius: 1.1875rem;
   position: absolute;
   z-index: 5;
   text-transform: uppercase;
   text-align: center;
   background: white;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
   border: 1px solid #D01A1A;
   color: #D01A1A;
   transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
@@ -183,12 +198,12 @@ main.chat {
 
 .checkbox-red input[type="checkbox"]:checked+.checkbox-red-switch:before {
   content: attr(data-label-off);
-  left: 20px;
+  left: 1.25rem;
 }
 
 .checkbox-red input[type="checkbox"]:checked+.checkbox-red-switch:after {
   content: attr(data-label-on);
-  transform: translate3d(141px, 0, 0);
+  transform: translate3d(8.8125rem, 0, 0);
 }
 
 .checkbox-red input[type="checkbox"]:not(:disabled)+.checkbox-red-switch:hover {
@@ -198,18 +213,18 @@ main.chat {
 .chat-body {
   margin-top: 100px;
   display: flex;
-  /* margin-bottom: 100px; */
+  margin-bottom: 100px;
 }
 
 .chats {
-  width: 545px;
+  width: 34.0625rem;
   background: #000000;
-  border-radius: 14px 0 0 14px;
+  border-radius: 0.875rem 0 0 0.875rem;
 }
 
 .chats-head {
-  width: 545px;
-  padding: 50px 44px;
+  width: 34.0625rem;
+  padding: 3.125rem 2.75rem;
 }
 
 .chats-search {
@@ -219,10 +234,10 @@ main.chat {
 .chats-search_input {
   font-family: inherit;
   width: 100%;
-  height: 42px;
-  padding-left: 30px;
+  height: 2.625rem;
+  padding-left: 1.875rem;
   border: 2px solid #ffffffc0;
-  border-radius: 82px;
+  border-radius: 5.125rem;
   background: none;
   outline: none;
   color: #9E9C9C;
@@ -232,11 +247,11 @@ main.chat {
   position: absolute;
   top: 0;
   right: 0px;
-  width: 42px;
-  height: 42px;
+  width: 2.625rem;
+  height: 2.625rem;
   border: none;
   background: none;
-  border-radius: 82;
+  border-radius: 5.125rem;
   cursor: pointer;
 }
 
@@ -245,14 +260,14 @@ main.chat {
 }
 
 .chats-content {
-  height: 800px;
+  height: 50rem;
   overflow: auto;
   color-scheme: dark;
 }
 
 .chats-active {
   border: 3px solid #000000;
-  border-radius: 0 19px 19px 0;
+  border-radius: 0 1.1875rem 1.1875rem 0;
   width: 100%;
   border-left: none;
 }
@@ -262,11 +277,11 @@ main.chat {
 }
 
 #tabsDiv ul {
-  /* padding: 0px 5px; */
+  /* padding: 0px 0.3125rem; */
 }
 
 #tabsDiv li {
-  height: 143px;
+  height: 8.9375rem;
 }
 
 #tabsDiv button {
@@ -279,7 +294,7 @@ main.chat {
   display: block;
   background-color: inherit;
   color: black;
-  padding: 17px 44px;
+  padding: 1.0625rem 2.75rem;
   width: 100%;
   text-align: left;
   cursor: pointer;
@@ -303,16 +318,16 @@ main.chat {
 
 .subject_name {
   font-weight: 600;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
   color: #FFFFFF;
   position: relative;
-  margin-bottom: 9px;
+  margin-bottom: 0.5625rem;
 }
 
 .subject_preview {
   display: -webkit-box;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 130%;
   color: #FFFFFF;
   -webkit-line-clamp: 2;
@@ -324,12 +339,12 @@ main.chat {
 .subject_name::after {
   content: "";
   background-color: #9B9B9B;
-  border-radius: 50px;
-  width: 13px;
-  height: 13px;
+  border-radius: 3.125rem;
+  width: 0.8125rem;
+  height: 0.8125rem;
   position: absolute;
   top: 38%;
-  margin-left: 14px;
+  margin-left: 0.875rem;
 }
 
 .subject_name.online::after {
@@ -337,13 +352,13 @@ main.chat {
 }
 
 .timer {
-  padding: 54px;
+  padding: 3.375rem;
 }
 
 #timer {
   font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
   color: #000000;
   white-space: nowrap;
   display: flex;
@@ -351,7 +366,7 @@ main.chat {
 }
 
 #timer span {
-  padding: 0 40px;
+  padding: 0 2.5rem;
 }
 
 .timer ::after {
@@ -359,7 +374,7 @@ main.chat {
   top: 100%;
   left: 50%;
   transform: translate(-50%);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   text-transform: uppercase;
   color: #000000;
@@ -390,26 +405,26 @@ main.chat {
 
 .subject-chat_headname {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 1.875rem;
+  margin-bottom: 2.5rem;
 }
 
 .subject-chat_headname h3 {
   font-weight: 600;
-  font-size: 23px;
+  font-size: 1.4375rem;
   line-height: 100%;
   color: #000000;
   margin-bottom: 10px;
 }
 
 .subject-chat_headname h4 {
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 100%;
   color: #000000;
 }
 
 .subject-chat_messenger {
-  padding: 0 50px;
+  padding: 0 3.125rem;
   overflow: auto;
   height: 525px;
 }
@@ -460,35 +475,35 @@ main.chat {
 
 .message_block {
   background: rgba(215, 215, 215, 0.5);
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
 }
 
 .messenger_user .message_block {
-  border-radius: 0px 19px 19px 19px;
+  border-radius: 0px 1.1875rem 1.1875rem 1.1875rem;
 }
 
 .messenger_admin .message_block {
-  border-radius: 19px 0px 19px 19px;
+  border-radius: 1.1875rem 0px 1.1875rem 1.1875rem;
 }
 
 .message_text {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   color: #000000;
 }
 
 .messenger_field {
   position: relative;
-  padding: 0 68px 0 50px;
+  padding: 0 68px 0 3.125rem;
 }
 
 .messenger_input {
   border: 1.5px solid #000000;
-  border-radius: 19px;
+  border-radius: 1.1875rem;
   font-family: inherit;
-  font-size: 20px;
-  line-height: 55px;
-  padding-left: 70px;
+  font-size: 1.25rem;
+  line-height: 3.4375rem;
+  padding-left: 4.375rem;
   width: 100%;
 }
 
@@ -497,13 +512,13 @@ main.chat {
   background: none;
   position: absolute;
   top: 0;
-  right: 69px;
-  padding: 18px;
+  right: 4.3125rem;
+  padding: 1.125rem;
 }
 
 .inp_file_label {
   position: absolute;
-  padding: 19px;
+  padding: 1.1875rem;
   cursor: pointer;
 }
 
@@ -519,5 +534,5 @@ main.chat {
 }
 
 .subject-chat_input {
-  padding: 40px 0 40px 0;
+  padding: 2.5rem 0 2.5rem 0;
 }
