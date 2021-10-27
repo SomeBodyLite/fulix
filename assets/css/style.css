@@ -138,13 +138,13 @@ main.chat {
   line-height: 1.75rem;
   position: relative;
   user-select: none;
-  height: 4.9375rem;
+  height: 3.9375rem;
 }
 
 .checkbox-red .checkbox-red-switch {
   display: inline-block;
-  height: 4.875rem;
-  width: 20.6875rem;
+  height: 3.875rem;
+  width: 15.2rem;
   box-sizing: border-box;
   position: relative;
   border-radius: 1.1875rem;
@@ -157,14 +157,14 @@ main.chat {
   display: inline-block;
   box-sizing: border-box;
   width: auto;
-  padding: 0 12px;
+  padding: 0 0.75rem;
   position: absolute;
-  top: 1.4375rem;
-  left: 9.6875rem;
+  top: 1.438rem;
+  left: 7.688rem;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.75rem;
-  line-height: 2.125rem;
+  font-size: 1.2rem;
+  line-height: 1.125rem;
   color: #FFFFFF;
 }
 
@@ -180,8 +180,8 @@ main.chat {
   text-transform: uppercase;
   text-align: center;
   background: white;
-  font-size: 1.75rem;
-  line-height: 2.125rem;
+  font-size: 1.2rem;
+  line-height: 1.125rem;
   border: 1px solid #D01A1A;
   color: #D01A1A;
   transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
@@ -203,7 +203,7 @@ main.chat {
 
 .checkbox-red input[type="checkbox"]:checked+.checkbox-red-switch:after {
   content: attr(data-label-on);
-  transform: translate3d(8.8125rem, 0, 0);
+  transform: translate3d(5.813rem, 0, 0);
 }
 
 .checkbox-red input[type="checkbox"]:not(:disabled)+.checkbox-red-switch:hover {
@@ -211,9 +211,9 @@ main.chat {
 }
 
 .chat-body {
-  margin-top: 100px;
+  margin-top: 5.25rem;
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 5.25rem;
 }
 
 .chats {
@@ -224,7 +224,7 @@ main.chat {
 
 .chats-head {
   width: 34.0625rem;
-  padding: 3.125rem 2.75rem;
+  padding: 2.125rem 2.35rem;
 }
 
 .chats-search {
@@ -260,13 +260,13 @@ main.chat {
 }
 
 .chats-content {
-  height: 50rem;
+  height: 37rem;
   overflow: auto;
   color-scheme: dark;
 }
 
 .chats-active {
-  border: 3px solid #000000;
+  border: 0.1875rem solid #000000;
   border-radius: 0 1.1875rem 1.1875rem 0;
   width: 100%;
   border-left: none;
@@ -281,7 +281,7 @@ main.chat {
 }
 
 #tabsDiv li {
-  height: 8.9375rem;
+  height: 6rem;
 }
 
 #tabsDiv button {
@@ -294,7 +294,7 @@ main.chat {
   display: block;
   background-color: inherit;
   color: black;
-  padding: 1.0625rem 2.75rem;
+  padding: 0.8rem 2.35rem;
   width: 100%;
   text-align: left;
   cursor: pointer;
@@ -318,8 +318,8 @@ main.chat {
 
 .subject_name {
   font-weight: 600;
-  font-size: 1.75rem;
-  line-height: 2.125rem;
+  font-size: 1.25rem;
+  line-height: 100%;
   color: #FFFFFF;
   position: relative;
   margin-bottom: 0.5625rem;
@@ -327,8 +327,8 @@ main.chat {
 
 .subject_preview {
   display: -webkit-box;
-  font-size: 1.375rem;
-  line-height: 130%;
+  font-size: 0.95rem;
+  line-height: 118%;
   color: #FFFFFF;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -343,7 +343,7 @@ main.chat {
   width: 0.8125rem;
   height: 0.8125rem;
   position: absolute;
-  top: 38%;
+  top: 24%;
   margin-left: 0.875rem;
 }
 
@@ -352,13 +352,13 @@ main.chat {
 }
 
 .timer {
-  padding: 3.375rem;
+  padding: 2.5rem;
 }
 
 #timer {
   font-weight: 600;
-  font-size: 2.25rem;
-  line-height: 2.75rem;
+  font-size: 1.15rem;
+  line-height: 140%;
   color: #000000;
   white-space: nowrap;
   display: flex;
@@ -366,7 +366,7 @@ main.chat {
 }
 
 #timer span {
-  padding: 0 2.5rem;
+  padding: 0 2.3rem;
 }
 
 .timer ::after {
@@ -374,7 +374,7 @@ main.chat {
   top: 100%;
   left: 50%;
   transform: translate(-50%);
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   line-height: 150%;
   text-transform: uppercase;
   color: #000000;
@@ -405,8 +405,8 @@ main.chat {
 
 .subject-chat_headname {
   text-align: center;
-  margin-top: 1.875rem;
-  margin-bottom: 2.5rem;
+  margin-top: 0.875rem;
+  margin-bottom: 1.5rem;
 }
 
 .subject-chat_headname h3 {
@@ -414,7 +414,7 @@ main.chat {
   font-size: 1.4375rem;
   line-height: 100%;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .subject-chat_headname h4 {
@@ -426,23 +426,23 @@ main.chat {
 .subject-chat_messenger {
   padding: 0 3.125rem;
   overflow: auto;
-  height: 525px;
+  height: 24.8rem;
 }
 
 .message_head {
   display: flex;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 .m_message {
-  margin-bottom: 80px;
+  margin-bottom: 3rem;
 }
 
 .m_message .message_name {
   font-weight: 600;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 100%;
   color: #000000;
 }
 
@@ -451,23 +451,23 @@ main.chat {
 }
 
 .messenger_user .message_name {
-  margin-right: 18px;
+  margin-right: 1.125rem;
 }
 
 .messenger_admin .message_name {
-  margin-left: 18px;
+  margin-left: 1.125rem;
 }
 
 .messenger_user .message_status {
-  margin-right: 29px;
+  margin-right: 1.8125rem;
 }
 
 .messenger_admin .message_status {
-  margin-left: 29px;
+  margin-left: 1.8125rem;
 }
 
 .message_time {
-  font-size: 18px;
+  font-size: 0.95rem;
   line-height: 150%;
   color: #000000;
   opacity: 0.5;
@@ -475,7 +475,7 @@ main.chat {
 
 .message_block {
   background: rgba(215, 215, 215, 0.5);
-  padding: 1.25rem 1.875rem;
+  padding: 1rem 1.275rem;
 }
 
 .messenger_user .message_block {
@@ -487,22 +487,22 @@ main.chat {
 }
 
 .message_text {
-  font-size: 1.25rem;
+  font-size: 0.95rem;
   line-height: 150%;
   color: #000000;
 }
 
 .messenger_field {
   position: relative;
-  padding: 0 68px 0 3.125rem;
+  padding: 0 4.25rem 0 3.125rem;
 }
 
 .messenger_input {
   border: 1.5px solid #000000;
   border-radius: 1.1875rem;
   font-family: inherit;
-  font-size: 1.25rem;
-  line-height: 3.4375rem;
+  font-size: 0.95rem;
+  line-height: 3rem;
   padding-left: 4.375rem;
   width: 100%;
 }
@@ -513,12 +513,12 @@ main.chat {
   position: absolute;
   top: 0;
   right: 4.3125rem;
-  padding: 1.125rem;
+  padding: 0.95rem;
 }
 
 .inp_file_label {
   position: absolute;
-  padding: 1.1875rem;
+  padding: 0.9rem;
   cursor: pointer;
 }
 
@@ -534,5 +534,5 @@ main.chat {
 }
 
 .subject-chat_input {
-  padding: 2.5rem 0 2.5rem 0;
+  padding: 1.5rem 0 1.5rem 0;
 }
