@@ -32,13 +32,13 @@ button {
 
 @media (max-width:1300px) {
   .wrp {
-    width: 1150px;
+    width: 1050px;
   }
 }
 
 main {
   flex: 1 1 auto;
-  transform: scale(40%);
+  transform: scale(82%);
 }
 
 header {
