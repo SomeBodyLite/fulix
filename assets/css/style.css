@@ -34,7 +34,7 @@ button {
 
 @media (max-width:1400px) {
   .wrp {
-    width: 1000px;
+    width: 960px;
   }
 
   .chat-body {
@@ -57,6 +57,16 @@ button {
 
   html {
     font-size: 10px;
+  }
+}
+
+@media (max-width:1000px) {
+  .wrp {
+    width: 650px;
+  }
+
+  html {
+    font-size: 8px;
   }
 }
 
@@ -94,6 +104,10 @@ footer {
 
 .header-socials {
   display: flex;
+}
+
+.header-socials img {
+  width: 1.875rem;
 }
 
 .header-socials a {
@@ -145,6 +159,7 @@ main.chat {
 }
 
 .chat-head_img {
+  width: 12rem;
   margin-right: 7.375rem;
 }
 
@@ -272,8 +287,8 @@ main.chat {
   cursor: pointer;
 }
 
-.chats-search_button:before {
-  content: url(../images/search.svg);
+.chats-search_button img {
+  width: 1.0625rem;
 }
 
 .chats-content {
