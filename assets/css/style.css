@@ -174,7 +174,7 @@ footer {
   background: none;
   outline: none;
   color: #000000c4;
-  min-width: 400px;
+  min-width: 25rem;
 }
 
 .news-search_button {
