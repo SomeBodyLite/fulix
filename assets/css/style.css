@@ -27,11 +27,15 @@ button {
 }
 
 .wrp {
-  width: 95%;
+  width: 1200px;
+  text-align: left;
   margin: 0 auto;
 }
 
 @media (max-width:1400px) {
+  .wrp {
+    width: 960px;
+  }
 
   .chat-body {
     width: 85%;
@@ -47,6 +51,9 @@ button {
 }
 
 @media (max-width:1200px) {
+  .wrp {
+    width: 800px;
+  }
 
   html {
     font-size: 10px;
@@ -54,6 +61,10 @@ button {
 }
 
 @media (max-width:1000px) {
+  .wrp {
+    width: 650px;
+  }
+
   html {
     font-size: 8px;
   }
@@ -61,6 +72,7 @@ button {
 
 main {
   flex: 1 1 auto;
+  display: flex;
 }
 
 header {
@@ -131,14 +143,16 @@ footer {
   color: #000000;
 }
 
-main.chat {}
+main.chat {
+  margin-top: 3.125rem;
+  margin-bottom: 3.25rem;
+}
 
 .chat-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .chat-head {
@@ -230,7 +244,7 @@ main.chat {}
 }
 
 .chat-body {
-  margin-top: 3rem;
+  margin-top: 3.25rem;
   display: flex;
   width: 90%;
 }
@@ -280,7 +294,7 @@ main.chat {}
 }
 
 .chats-content {
-  height: 32rem;
+  height: 37rem;
   overflow: auto;
   color-scheme: dark;
 }
@@ -446,7 +460,7 @@ main.chat {}
 .subject-chat_messenger {
   padding: 0 3.125rem;
   overflow: auto;
-  height: 20rem;
+  height: 24.8rem;
 }
 
 .message_head {
