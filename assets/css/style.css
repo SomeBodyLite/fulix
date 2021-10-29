@@ -195,6 +195,7 @@ footer {
   font-size: 20px;
   line-height: 150%;
   color: #000000;
+  align-items: center;
 }
 
 .m-back-button :first-child {
