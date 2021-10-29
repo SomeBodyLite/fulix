@@ -40,6 +40,18 @@ footer {
   background: #D01A1A;
 }
 
+@media (max-width:1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 .header-start span {
   font-weight: 500;
   font-size: 1.375rem;
