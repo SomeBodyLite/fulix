@@ -4,443 +4,260 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <title>Fulix - Chat (support)</title>
+    <title>Fulix - News</title>
   </head>
-
   <body>
     <div class="wrapper">
       <header>
-        <div class="header-content wrp">
-          <div class="header-start">
-            <span>Feedback</span>
-          </div>
-          <div class="header-end">
-            <div class="header-socials">
-              <a href="#">
-                <img src="./assets/images/twitter.svg" alt="twitter" />
-              </a>
-              <a href="#">
-                <img src="./assets/images/telegram.svg" alt="telegram" />
-              </a>
-              <a href="#">
-                <img src="./assets/images/facebook.svg" alt="facebook" />
-              </a>
-            </div>
-            <div class="header-buttons">
-              <button class="b_tor">TOR</button>
-              <button class="b_web">WEB</button>
+        <div class="container">
+          <div class="row">
+            <div class="header-content">
+              <div class="header-start">
+                <a href="#">
+                  <span>Enter UUID</span>
+                </a>
+                <a href="#">
+                  <span>Feedback</span>
+                </a>
+              </div>
+              <div class="header-end">
+                <div class="header-socials">
+                  <a href="#">
+                    <img src="./assets/images/twitter.svg" alt="twitter" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/telegram.svg" alt="telegram" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/facebook.svg" alt="facebook" />
+                  </a>
+                </div>
+                <div class="header-buttons">
+                  <button class="b_tor">TOR</button>
+                  <button class="b_web">WEB</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </header>
-      <main class="chat">
-        <div class="chat-content wrp">
-          <div class="chat-head">
-            <img class="chat-head_img" src="./assets/images/Logo.svg" alt="" />
-            <label class="checkbox-red">
-              <input id="change" type="checkbox" />
-              <span
-                class="checkbox-red-switch"
-                data-label-on="SECTION"
-                data-label-off="CHAT"
-              ></span>
-            </label>
-          </div>
-          <div class="chat-body">
-            <div class="chats">
-              <div class="chats-head">
-                <form class="chats-search">
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="sub-header">
+              <div class="sh-start">
+                <img src="./assets/images/Logo.svg" alt="Logo" />
+              </div>
+              <div class="sh-midle">
+                <nav class="sh-midle-nav">
+                  <ul>
+                    <li class="sh-m-l"><a href="#">New company</a></li>
+                    <li class="sh-m-l m-l-active"><a href="#">Full data</a></li>
+                    <li class="sh-m-l"><a href="#">Archive</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="sh-end">
+                <form class="news-search">
                   <input
-                    class="chats-search_input"
+                    class="news-search_input"
                     type="text"
-                    placeholder="Search..."
+                    placeholder="Search for company..."
                   />
-                  <button class="chats-search_button" type="submit">
-                    <img src="./assets/images/search.svg" alt="">
+                  <button class="news-search_button" type="submit">
+                    <img src="./assets/images/n-search.svg" alt="" />
                   </button>
                 </form>
               </div>
-              <div class="chats-content">
-                <div id="tabsDiv">
-                  <ul class="ulClass" style="height: 300px">
-                    <li>
-                      <button
-                        class="linkClass"
-                        onclick="displayContent(event, 'chat1')"
-                      >
-                        <div class="subject_name online">Name</div>
-                        <div class="subject_preview">
-                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
-                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
-                          amet, dolor sitconsectetuer adipiscing elit. Lorem
-                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
-                          elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit.
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button
-                        class="linkClass"
-                        onclick="displayContent(event, 'chat2')"
-                      >
-                        <div class="subject_name">Name</div>
-                        <div class="subject_preview">
-                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
-                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
-                          amet, dolor sitconsectetuer adipiscing elit. Lorem
-                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
-                          elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit.
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button
-                        class="linkClass"
-                        onclick="displayContent(event, 'chat3')"
-                      >
-                        <div class="subject_name">Name</div>
-                        <div class="subject_preview">
-                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
-                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
-                          amet, dolor sitconsectetuer adipiscing elit. Lorem
-                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
-                          elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit.
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button
-                        class="linkClass"
-                        onclick="displayContent(event, 'chat4')"
-                      >
-                        <div class="subject_name online">Name</div>
-                        <div class="subject_preview">
-                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
-                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
-                          amet, dolor sitconsectetuer adipiscing elit. Lorem
-                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
-                          elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit.
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button
-                        class="linkClass"
-                        onclick="displayContent(event, 'chat5')"
-                      >
-                        <div class="subject_name online">Name</div>
-                        <div class="subject_preview">
-                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
-                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
-                          amet, dolor sitconsectetuer adipiscing elit. Lorem
-                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
-                          elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit.
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button
-                        class="linkClass"
-                        onclick="displayContent(event, 'chat6')"
-                      >
-                        <div class="subject_name online">Name</div>
-                        <div class="subject_preview">
-                          Lorem ipsum dolor sit amet, dolor sitconsectetuer
-                          adipiscing elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit. Lorem ipsum dolor sit
-                          amet, dolor sitconsectetuer adipiscing elit. Lorem
-                          ipsum dolor sit amet, dolor sitconsectetuer adipiscing
-                          elit. Lorem ipsum dolor sit amet, dolor
-                          sitconsectetuer adipiscing elit.
-                        </div>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
-            <div class="chats-active">
-              <div id="chat1" class="contentClass">
-                <div class="timer">
-                  <div id="timer"></div>
+            <div class="main-content">
+              <div class="m-back">
+                <a class="m-back-link" href="#">
+                  <button class="m-back-button">
+                    <img src="./assets/images/back-button.svg" alt="" />
+                    <p>Back</p>
+                  </button>
+                </a>
+              </div>
+              <div class="new-news-content">
+                <div class="n-n-c-start">
+                  <img
+                    src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80"
+                    alt=""
+                  />
                 </div>
-                <div class="subject-chat_headname">
-                  <h3>Example text</h3>
-                  <h4>example text</h4>
-                </div>
-                <div class="subject-chat_messenger">
-                  <div class="messenger_user m_message">
-                    <div class="message_head">
-                      <div class="message_name">Name</div>
-                      <div class="message_status">
-                        <img src="./assets/images/read.svg" alt="" />
-                      </div>
-                      <div class="message_time">10:42</div>
-                    </div>
-                    <div class="message_content">
-                      <div class="message_block">
-                        <p class="message_text">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit. Lorem ipsum dolor sit amet, consectetuer
-                          adipiscing elit. Lorem ipsum dolor sit amet,
-                          consectetuer adipiscing elit. Lorem ipsum dolor sit
-                          amet, consectetuer adipiscing.
-                        </p>
-                      </div>
+                <div class="n-n-c-end">
+                  <div class="n-n-c-e-timentags">
+                    <div class="n-n-c-e-t-time">01.09.2021 — 19:35</div>
+                    <div class="n-n-c-e-t-tags">
+                      <span class="n-n-c-e-t-t-tag">#test-tag</span>
+                      <span class="n-n-c-e-t-t-tag">#test-tag</span>
+                      <span class="n-n-c-e-t-t-tag">#test-tag</span>
                     </div>
                   </div>
-                  <div class="messenger_admin m_message">
-                    <div class="message_head">
-                      <div class="message_name">Support</div>
-                      <div class="message_status">
-                        <img src="./assets/images/read.svg" alt="" />
-                      </div>
-                      <div class="message_time">10:47</div>
-                    </div>
-                    <div class="message_content">
-                      <div class="message_block">
-                        <p class="message_text">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit. Lorem ipsum dolor sit amet, consectetuer
-                          adipiscing elit. Lorem ipsum dolor sit amet,
-                          consectetuer adipiscing elit. Lorem ipsum dolor sit
-                          amet, consectetuer adipiscing.
-                        </p>
-                      </div>
+                  <div class="n-n-c-e-namenmarks">
+                    <h2 class="n-n-c-e-n-name">Name example</h2>
+                    <div class="n-n-c-e-n-marks">
+                      <span class="n-n-c-e-n-m-mark mark">site.com</span>
+                      <span class="n-n-c-e-n-m-mark mark-red">100 GB</span>
                     </div>
                   </div>
-                  <div class="messenger_user m_message">
-                    <div class="message_head">
-                      <div class="message_name">Name</div>
-                      <div class="message_status">
-                        <img src="./assets/images/send.svg" alt="" />
-                      </div>
-                      <div class="message_time">10:52</div>
-                    </div>
-                    <div class="message_content">
-                      <div class="message_block">
-                        <p class="message_text">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit. Lorem ipsum dolor sit amet, consectetuer
-                          adipiscing elit. Lorem ipsum dolor sit amet,
-                          consectetuer adipiscing elit. Lorem ipsum dolor sit
-                          amet, consectetuer adipiscing.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="messenger_user m_message">
-                    <div class="message_head">
-                      <div class="message_name">Name</div>
-                      <div class="message_status">
-                        <img src="./assets/images/error.svg" alt="" />
-                      </div>
-                      <div class="message_time">10:55</div>
-                    </div>
-                    <div class="message_content">
-                      <div class="message_block">
-                        <p class="message_text">Lorem ipsum dolor sit amet</p>
-                      </div>
-                    </div>
+                  <div class="n-n-c-e-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus. Aenean massa. Cum sociis natoque.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes.
+                    </p>
                   </div>
                 </div>
-                <div class="subject-chat_input">
-                  <form class="messenger_field" action="">
-                    <label class="inp_file_label" for="inp_file">
-                      <img src="./assets/images/attach.svg" alt="" />
-                    </label>
-                    <input
-                      class="messenger_input__file"
-                      type="file"
-                      id="inp_file"
-                      name="inp_file"
-                    />
-                    <input
-                      class="messenger_input"
-                      type="text"
-                      placeholder="Write message..."
-                    />
-                    <button class="messenger_input__sendbutton" type="submit">
-                      <img src="./assets/images/m_i_b.svg" alt="" />
-                    </button>
-                  </form>
+              </div>
+              <div class="m-imgsnfiles">
+                <div class="m-i-start">
+                  <h2 class="m-i-s-head">Screenshots</h2>
+                  <div class="m-i-s-imgs">
+                    <a class="m-i-s-i-imglink" href="#">
+                      <img
+                        class="m-i-s-i-i-img"
+                        src="https://sun1-25.userapi.com/s/v1/if1/CSGRz62zs47bx5t0ln0wVJWuRyblhrUEU1Osnet0gupJsz5vmksRixlM7QBTMmOHpGsOwLq6.jpg?size=200x0&quality=96&crop=128,0,769,769&ava=1"
+                        alt=""
+                      />
+                    </a>
+                    <a class="m-i-s-i-imglink" href="#">
+                      <img
+                        class="m-i-s-i-i-img"
+                        src="https://www.goodfreephotos.com/cache/united-states/alaska/other-alaska/view-of-wrst-mountain_200_w200_h200_cw200_ch200_thumb.jpg?cached=1558211448"
+                        alt=""
+                      />
+                    </a>
+                    <a class="m-i-s-i-imglink" href="#">
+                      <img
+                        class="m-i-s-i-i-img"
+                        src="https://fromhomeandback.boardingarea.com/wp-content/uploads/2017/05/alaska-1980933_1920-200x200.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <a class="m-i-s-i-imglink" href="#">
+                      <img
+                        class="m-i-s-i-i-img"
+                        src="https://www.goodfreephotos.com/cache/united-states/alaska/other-alaska/donoho-basin-landscape_200_w200_h200_cw200_ch200_thumb.jpg?cached=1558209784"
+                        alt=""
+                      />
+                    </a>
+                    <a class="m-i-s-i-imglink" href="#">
+                      <img
+                        class="m-i-s-i-i-img"
+                        src="https://pp.userapi.com/c841323/v841323250/46a7e/1XDmu9WxJL4.jpg?ava=1"
+                        alt=""
+                      />
+                    </a>
+                    <a class="m-i-s-i-imglink" href="#">
+                      <img
+                        class="m-i-s-i-i-img"
+                        src="https://i.pinimg.com/736x/fb/b8/e8/fbb8e8d9532f8abb13af44e440b664c1--alaska-adventures-juneau-alaska.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="m-i-s-dwn">
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">423 GB</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div id="chat2" class="contentClass">
-                <h3>Practice</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Fringilla urna porttitor rhoncus dolor purus non enim praesent
-                  elementum. Facilisis sed odio morbi quis commodo odio aenean
-                  sed. Vulputate eu scelerisque felis imperdiet proin fermentum
-                  leo vel. At augue eget arcu dictum varius duis at consectetur
-                  lorem. Cursus risus at ultrices mi tempus imperdiet nulla
-                  malesuada. Facilisis magna etiam tempor orci eu. Velit
-                  dignissim sodales ut eu. Augue neque gravida in fermentum et
-                  sollicitudin ac orci phasellus. Mi proin sed libero enim sed
-                  faucibus turpis in eu. Mauris ultrices eros in cursus turpis
-                  massa tincidunt. Eu scelerisque felis imperdiet proin
-                  fermentum. Egestas sed tempus urna et pharetra pharetra massa.
-                  Tortor dignissim convallis aenean et tortor at risus viverra.
-                  Vitae purus faucibus ornare suspendisse. Cras ornare arcu dui
-                  vivamus.
-                </p>
-              </div>
-              <div id="chat3" class="contentClass">
-                <h3>Elfifsd</h3>
-                <p>
-                  Eleifend mi in nulla posuere sollicitudin. Sed arcu non odio
-                  euismod lacinia. Interdum consectetur libero id faucibus nisl.
-                  Aenean pharetra magna ac placerat vestibulum lectus mauris
-                  ultrices. Iaculis nunc sed augue lacus viverra vitae. Nulla
-                  facilisi morbi tempus iaculis urna id. Nulla at volutpat diam
-                  ut venenatis tellus. Fringilla urna porttitor rhoncus dolor
-                  purus non. Id eu nisl nunc mi. Ut etiam sit amet nisl purus in
-                  mollis nunc sed. Lacus laoreet non curabitur gravida arcu ac
-                  tortor dignissim convallis. Arcu non sodales neque sodales.
-                  Feugiat scelerisque varius morbi enim nunc faucibus. Bibendum
-                  at varius vel pharetra vel. Massa vitae tortor condimentum
-                  lacinia quis. Adipiscing tristique risus nec feugiat in
-                  fermentum posuere urna. A lacus vestibulum sed arcu non odio
-                  euismod lacinia at. Tincidunt arcu non sodales neque sodales
-                  ut etiam.
-                </p>
-              </div>
-              <div id="chat4" class="contentClass">
-                <h3>Greedy Algorithms</h3>
-                <p>
-                  Non consectetur a erat nam at lectus. Ultricies lacus sed
-                  turpis tincidunt. Orci eu lobortis elementum nibh tellus
-                  molestie nunc non. Ultrices in iaculis nunc sed augue. Cras
-                  sed felis eget velit aliquet sagittis. Amet est placerat in
-                  egestas erat imperdiet. Dictum sit amet justo donec enim diam
-                  vulputate ut. Ornare suspendisse sed nisi lacus sed viverra
-                  tellus in hac. Sem nulla pharetra diam sit amet nisl. Mattis
-                  rhoncus urna neque viverra justo nec ultrices. Augue mauris
-                  augue neque gravida in fermentum et sollicitudin. Vulputate
-                  odio ut enim blandit volutpat. At in tellus integer feugiat
-                  scelerisque varius morbi. Morbi tristique senectus et netus et
-                  malesuada. Donec pretium vulputate sapien nec sagittis aliquam
-                  malesuada bibendum arcu. Id venenatis a condimentum vitae
-                  sapien pellentesque. Vitae ultricies leo integer malesuada
-                  nunc vel. Fermentum et sollicitudin ac orci phasellus egestas
-                  tellus rutrum. Vel pretium lectus quam id leo in vitae. Nisl
-                  purus in mollis nunc sed id semper.
-                </p>
-              </div>
-              <div id="chat5" class="contentClass">
-                <h3>Greedy Algorithms</h3>
-                <p>
-                  Ut diam quam nulla porttitor massa id neque. Urna nunc id
-                  cursus metus aliquam eleifend mi. Fermentum posuere urna nec
-                  tincidunt praesent. Eget gravida cum sociis natoque penatibus
-                  et magnis. Convallis tellus id interdum velit laoreet id
-                  donec. Facilisis volutpat est velit egestas. In est ante in
-                  nibh. Integer enim neque volutpat ac. Orci eu lobortis
-                  elementum nibh tellus molestie nunc non blandit. Ac orci
-                  phasellus egestas tellus rutrum tellus pellentesque eu.
-                  Senectus et netus et malesuada fames.
-                </p>
-              </div>
-              <div id="chat6" class="contentClass">
-                <h3>Greedy Algorithms</h3>
-                <p>
-                  Congue quisque egestas diam in arcu. Venenatis a condimentum
-                  vitae sapien pellentesque habitant morbi tristique. In arcu
-                  cursus euismod quis viverra nibh cras pulvinar. In cursus
-                  turpis massa tincidunt. Consectetur purus ut faucibus
-                  pulvinar. Fusce ut placerat orci nulla pellentesque dignissim
-                  enim sit amet. Augue mauris augue neque gravida in fermentum
-                  et sollicitudin. Arcu odio ut sem nulla pharetra diam sit
-                  amet. Pulvinar pellentesque habitant morbi tristique senectus.
-                  Aliquam id diam maecenas ultricies mi eget mauris. Facilisi
-                  morbi tempus iaculis urna id volutpat lacus laoreet non.
-                  Gravida dictum fusce ut placerat. Sed lectus vestibulum mattis
-                  ullamcorper velit sed ullamcorper morbi tincidunt. Eleifend
-                  quam adipiscing vitae proin sagittis. Sit amet consectetur
-                  adipiscing elit ut aliquam purus sit amet. Urna id volutpat
-                  lacus laoreet non curabitur gravida. Euismod nisi porta lorem
-                  mollis. Cursus in hac habitasse platea dictumst quisque
-                  sagittis.
-                </p>
+                <div class="m-i-end">
+                  <h2 class="m-i-e-head">Files</h2>
+                  <div class="m-i-e-dwn">
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">200 GB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">200 MB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">130 GB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">345 MB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">423 GB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">800 MB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">423 GB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">800 MB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">423 GB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">800 MB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">423 GB</span>
+                    </a>
+                    <a href="#">
+                      <p>Download</p>
+                      <span class="dwn-mark">800 MB</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </main>
       <footer>
-        <div class="header-content wrp">
-          <div class="header-start">
-            <span>Feedback</span>
-          </div>
-          <div class="header-end">
-            <div class="header-socials">
-              <a href="#">
-                <img src="./assets/images/twitter.svg" alt="twitter" />
-              </a>
-              <a href="#">
-                <img src="./assets/images/telegram.svg" alt="telegram" />
-              </a>
-              <a href="#">
-                <img src="./assets/images/facebook.svg" alt="facebook" />
-              </a>
+        <div class="container">
+          <div class="row">
+            <div class="header-content">
+              <div class="header-start">
+                <a href="#">
+                  <span>Enter UUID</span>
+                </a>
+                <a href="#">
+                  <span>Feedback</span>
+                </a>
+              </div>
+              <div class="header-end">
+                <div class="header-socials">
+                  <a href="#">
+                    <img src="./assets/images/twitter.svg" alt="twitter" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/telegram.svg" alt="telegram" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/facebook.svg" alt="facebook" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
   </body>
-  <script>
-    $(window).keyup(function (e) {
-      var target = $(".checkbox-red input:focus");
-      if (e.keyCode == 9 && $(target).length) {
-        $(target).parent().addClass("focused");
-      }
-    });
-    // change.onclick = function () {
-    //   window.location.href = "https://google.com";
-    // };
-    $(".checkbox-red input").focusout(function () {
-      $(this).parent().removeClass("focused");
-    });
-    function displayContent(event, contentNameID) {
-      let content = document.getElementsByClassName("contentClass");
-      let totalCount = content.length;
-
-      // Loop through the content class
-      // and hide the tabs first
-      for (let count = 0; count < totalCount; count++) {
-        content[count].style.display = "none";
-      }
-
-      let links = document.getElementsByClassName("linkClass");
-      totalLinks = links.length;
-
-      // Loop through the links and
-      // remove the active class
-      for (let count = 0; count < totalLinks; count++) {
-        links[count].classList.remove("active");
-      }
-
-      // Display the current tab
-      document.getElementById(contentNameID).style.display = "block";
-
-      // Add the active class to the current tab
-      event.currentTarget.classList.add("active");
-    }
-  </script>
-  <script src="./assets/js/timer.js" prefer></script>
 </html>
