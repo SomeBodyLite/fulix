@@ -204,7 +204,7 @@ footer {
   background: none;
   border: none;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   color: #000000;
   align-items: center;
@@ -253,6 +253,7 @@ footer {
   font-size: 1.0625rem;
   line-height: 1.3125rem;
   color: #000000ce;
+  cursor: pointer;
 }
 
 .n-n-c-e-namenmarks {
@@ -281,7 +282,7 @@ footer {
   font-size: 1.375rem;
   line-height: 135%;
   color: #FFFFFF;
-  margin: 0 10px;
+  margin: 0 0.625rem;
   white-space: nowrap;
 }
 
@@ -324,7 +325,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 30px 30px;
+  gap: 1.875rem 1.875rem;
   grid-template-areas: ". . ."
     ". . .";
 }
@@ -382,9 +383,316 @@ footer {
 .m-i-e-dwn span {
   background: #000000;
   border-radius: 100px;
-  padding: 3px 12px;
+  padding: 0.1875rem 0.75rem;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 135%;
   color: #FFFFFF;
+}
+
+.m-main-content {
+  margin-top: 9.375rem;
+  margin-bottom: 7rem;
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr;
+  grid-template-rows: auto;
+  gap: 0px 14.0625rem;
+  grid-template-areas:
+    "m-c-main m-c-aside";
+}
+
+.m-c-aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 7.5rem 0px;
+  grid-template-areas:
+    "m-c-aside-1"
+    "m-c-aside-2";
+  grid-area: m-c-aside;
+}
+
+.m-c-aside-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1.25rem 0px;
+  grid-template-areas:
+    "."
+    ".";
+  grid-area: m-c-aside-1;
+}
+
+.m-c-aside-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1.25rem 0px;
+  grid-template-areas:
+    "."
+    ".";
+  grid-area: m-c-aside-2;
+}
+
+/* .m-c-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 8.125rem 0px;
+  grid-template-areas:
+    "."
+    ".";
+  grid-area: m-c-main;
+} */
+.ann-block {
+  margin: 9.375rem 0;
+}
+
+.ann-block:first-child {
+  margin: 0 0 9.375rem 0;
+}
+
+.ann-block:last-child {
+  margin: 9.375rem 0 0 0;
+}
+
+.aside-head {
+  font-family: Chivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.3rem;
+  line-height: 2.8rem;
+  color: #000000;
+  margin-bottom: 0.9375rem;
+}
+
+.aside-card a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.aside-card-content {
+  position: relative;
+  padding: 2.75rem 3.125rem;
+  border-radius: 19px;
+  background: linear-gradient(105.45deg, #D01A1A -20.3%, #000000 323.11%);
+  transition: background 0.1s ease-in-out;
+}
+
+.aside-card-content:hover,
+.aside-card-content:focus {
+  background: linear-gradient(105.45deg, #870E0E -20.3%, #000000 323.11%);
+}
+
+.aside-card-content:active {
+  background: linear-gradient(105.45deg, rgba(0, 0, 0, 0.85) -20.3%, rgba(0, 0, 0, 0.85) 323.11%);
+}
+
+.aside-card-content::after {
+  content: url(../images/card-arrow.svg);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 2.5rem;
+}
+
+.a-c-c-h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-bottom: 0.75rem;
+  color: #FFFFFF;
+}
+
+.a-c-c-h4 {
+  font-size: 1.125rem;
+  line-height: 135%;
+  color: #FFFFFF;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.a-b-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.1875rem;
+}
+
+.a-b-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5625rem;
+}
+
+.a-b-h-typedata,
+.a-b-h-time,
+.a-b-h-views-count {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #0000009e;
+}
+
+.a-b-h-views-count img {
+  width: 1.3125rem;
+}
+
+.a-b-h-typedata {
+  color: #D01A1A;
+}
+
+.a-b-h-v-c-views {
+  margin-left: 0.8125rem;
+}
+
+.a-b-n-name {
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 2rem;
+  color: #000000;
+  margin-right: 1.625rem;
+}
+
+.a-b-n-tag {
+  border-radius: 61px;
+  padding: 0.4375rem 2rem;
+  font-size: 1.125rem;
+  line-height: 135%;
+  color: #FFFFFF;
+  white-space: nowrap;
+  background: #000000d9;
+}
+
+.a-b-text {
+  font-size: 1.25rem;
+  line-height: 150%;
+  color: #000000;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1.25rem;
+}
+
+.a-b-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.a-b-b-tags {
+  display: flex;
+}
+
+.a-b-b-t-tag {
+  margin: 0 0.625rem;
+  font-size: 1.0625rem;
+  line-height: 1.3125rem;
+  color: #000000ce;
+  cursor: pointer;
+}
+
+.a-b-b-t-tag:first-child {
+  margin: 0 0.625rem 0 0;
+}
+
+.a-b-b-r-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.a-b-b-r-link:hover {
+  text-decoration: underline #D01A1A;
+}
+
+.a-b-b-r-l-button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.a-b-b-r-l-b-text {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 135%;
+  color: #D01A1A;
+}
+
+.a-b-b-r-l-b-img {
+  margin-left: 1.125rem;
+  width: 3.25rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6.25rem;
+}
+
+.main-nav-nav {
+  display: flex;
+  align-items: center;
+}
+
+.m-n-n-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.m-n-n-link:hover {
+  text-decoration: underline;
+}
+
+.m-n-n-link :first-child {
+  margin-right: 1.125rem;
+}
+
+.m-n-n-l-text {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 150%;
+  color: #000000;
+}
+
+.link-unactive {
+  opacity: 50%;
+}
+
+.main-nav-numbers {
+  display: flex;
+  margin: 0 4.375rem;
+}
+
+.main-nav-numbers span {
+  line-height: 2.85rem;
+  margin: 0 5px
+}
+
+.main-nav-numbers,
+.m-n-n-number {
+  font-size: 1.25rem;
+  line-height: 150%;
+  color: #000000;
+}
+
+.m-n-n-number {
+  padding: 0.5rem;
+  margin: 0 0.125rem;
+  text-decoration: none;
+}
+
+.m-n-n-number:hover {
+  text-decoration: underline;
+}
+
+.number-active {
+  color: #D01A1A;
 }
