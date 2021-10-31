@@ -7,19 +7,86 @@
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./assets/js/jquery.mask.min.js"></script>
     <title>Fulix - Main</title>
   </head>
   <body>
     <div class="wrapper">
+      <div id="UUID" class="mainModal">
+        <div class="modalUUID">
+          <a href="#close" title="Закрыть" class="close">X</a>
+          <h2>ENTER UUID</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient
+          </p>
+          <form action="index.html">
+            <input
+              class="uuid-input"
+              name="UUID-text"
+              type="text"
+              maxlength="20"
+              minlength="19"
+              required
+              placeholder="XXXX-XXXX-XXXX..."
+            />
+            <input type="submit" value="ENTER" />
+          </form>
+          <p class="gotofb">
+            If you do not have UUID, please contact via the
+            <a href="#feedback">feedback</a> form
+          </p>
+        </div>
+      </div>
+      <div id="feedback" class="mainModal">
+        <div class="modalFeedback">
+          <a href="#close" title="Закрыть" class="close">X</a>
+          <h2>FEEDBACK</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient
+          </p>
+          <form autocomplete="on" action="index.html">
+            <input
+              name="feedback-name"
+              required
+              autocomplete="on"
+              id="1"
+              type="text"
+              placeholder="Your name"
+            />
+            <input
+              id="2"
+              required
+              name="feedback-contacts"
+              autocomplete="on"
+              type="email"
+              placeholder="Your email"
+            />
+            <textarea
+              name="feedback-message"
+              required
+              id="3"
+              cols="30"
+              rows="4"
+              minlength="20"
+              placeholder="Your message"
+            ></textarea>
+            <input type="submit" value="SEND" />
+          </form>
+        </div>
+      </div>
       <header>
         <div class="container">
           <div class="row">
             <div class="header-content">
               <div class="header-start">
-                <a href="#">
+                <a href="#UUID">
                   <span>Enter UUID</span>
                 </a>
-                <a href="#">
+                <a href="#feedback">
                   <span>Feedback</span>
                 </a>
               </div>
@@ -455,4 +522,14 @@
       </footer>
     </div>
   </body>
+  <script>
+    $("body").on("input", ".uuid-input", function () {
+      this.value = this.value.toUpperCase();
+      $(".uuid-input").mask("AAAA-AAAA-AAAA-AAAA", {
+        translation: {
+          A: { pattern: /[A-Za-z0-9]/ },
+        },
+      });
+    });
+  </script>
 </html>
