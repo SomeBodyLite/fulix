@@ -892,11 +892,11 @@ footer {
 }
 
 .login-logo img {
-  width: 25rem;
+  width: 20rem;
 }
 
 .login-logo {
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
 .login-wrapper {
@@ -911,10 +911,10 @@ footer {
   font-family: Chivo;
   font-style: normal;
   font-weight: normal;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
   color: #000000;
-  margin-bottom: 3.75rem;
+  margin-bottom: 2.75rem;
 }
 
 .login-form {
@@ -926,18 +926,18 @@ footer {
 .login-form input[type="login"],
 .login-form input[type="password"] {
   font-family: Montserrat;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 150%;
   color: #FFFFFF;
   border: none;
   background: #D01A1A;
   border-radius: 19px;
-  line-height: 5rem;
+  line-height: 4rem;
   padding: 0 3rem;
 }
 
 .login-form input[type="login"] {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .login-form input[type="login"]::-webkit-input-placeholder,
@@ -947,10 +947,10 @@ footer {
 
 .login-form button {
   position: absolute;
-  right: -3.525rem;
+  right: -2.525rem;
   top: 50%;
-  width: 6.875rem;
-  height: 6.875rem;
+  width: 5rem;
+  height: 5rem;
   transform: translate(0, -50%);
   border-radius: 100%;
   background: #000000;
@@ -958,5 +958,5 @@ footer {
 }
 
 .login-form button img {
-  width: 1.875rem;
+  width: 1rem;
 }
