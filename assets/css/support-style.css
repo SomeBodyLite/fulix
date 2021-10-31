@@ -305,6 +305,12 @@ main.chat {
   border-left: none;
 }
 
+.chat-active {
+  border: 0.1875rem solid #000000;
+  border-radius: 1.1875rem;
+  width: 100%;
+}
+
 #tabsDiv {
   /* border: 2px solid #c0c0c0; */
 }
@@ -462,6 +468,12 @@ main.chat {
   height: 24.8rem;
 }
 
+.chat_messenger {
+  padding: 0 10.125rem;
+  overflow: auto;
+  height: 24.8rem;
+}
+
 .message_head {
   display: flex;
   align-items: center;
@@ -577,5 +589,10 @@ main.chat {
 }
 
 .subject-chat_input {
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.chat_input {
+  width: 80%;
   padding: 1.5rem 0 1.5rem 0;
 }
