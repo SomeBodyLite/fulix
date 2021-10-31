@@ -19,6 +19,10 @@ button {
   font-family: inherit;
 }
 
+a:focus {
+  outline: none;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
