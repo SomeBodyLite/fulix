@@ -960,3 +960,7 @@ footer {
 .login-form button img {
   width: 1rem;
 }
+
+.smartphoto-nav ul {
+  color-scheme: dark;
+}
