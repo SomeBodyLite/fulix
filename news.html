@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css"
+    />
     <title>Fulix - News</title>
   </head>
   <body>
@@ -121,46 +125,80 @@
                 <div class="m-i-start">
                   <h2 class="m-i-s-head">Screenshots</h2>
                   <div class="m-i-s-imgs">
-                    <a class="m-i-s-i-imglink" href="#">
+                    <!-- В <a> вставлять ссылку на большое изображение, в <img> - маленькое превью на странице. -->
+                    <!-- Чтобы добавить скринов в группу, важно чтоб данные в атрибуте data-group были одинаковы. Уровень DOM не имеет значения. Если нужно создать другую группу фото, смените атрибут data-group -->
+                    <!-- Атрибут data-caption - Текст который будет выводиться сверху при открытии изображения -->
+                    <!-- Атрибут data-caption - ID элемента. -->
+                    <a
+                      href="https://sun1-25.userapi.com/s/v1/if1/CSGRz62zs47bx5t0ln0wVJWuRyblhrUEU1Osnet0gupJsz5vmksRixlM7QBTMmOHpGsOwLq6.jpg?size=200x0&quality=96&crop=128,0,769,769&ava=1"
+                      class="js-smartPhoto m-i-s-i-imglink"
+                      data-caption="1"
+                      data-id="1"
+                      data-group="screens"
+                    >
                       <img
                         class="m-i-s-i-i-img"
                         src="https://sun1-25.userapi.com/s/v1/if1/CSGRz62zs47bx5t0ln0wVJWuRyblhrUEU1Osnet0gupJsz5vmksRixlM7QBTMmOHpGsOwLq6.jpg?size=200x0&quality=96&crop=128,0,769,769&ava=1"
-                        alt=""
                       />
                     </a>
-                    <a class="m-i-s-i-imglink" href="#">
+                    <a
+                      href="https://www.goodfreephotos.com/cache/united-states/alaska/other-alaska/view-of-wrst-mountain_200_w200_h200_cw200_ch200_thumb.jpg?cached=1558211448"
+                      class="js-smartPhoto m-i-s-i-imglink"
+                      data-caption="2"
+                      data-id="2"
+                      data-group="screens"
+                    >
                       <img
                         class="m-i-s-i-i-img"
                         src="https://www.goodfreephotos.com/cache/united-states/alaska/other-alaska/view-of-wrst-mountain_200_w200_h200_cw200_ch200_thumb.jpg?cached=1558211448"
-                        alt=""
                       />
                     </a>
-                    <a class="m-i-s-i-imglink" href="#">
+                    <a
+                      href="https://fromhomeandback.boardingarea.com/wp-content/uploads/2017/05/alaska-1980933_1920-200x200.jpg"
+                      class="js-smartPhoto m-i-s-i-imglink"
+                      data-caption="3"
+                      data-id="3"
+                      data-group="screens"
+                    >
                       <img
                         class="m-i-s-i-i-img"
                         src="https://fromhomeandback.boardingarea.com/wp-content/uploads/2017/05/alaska-1980933_1920-200x200.jpg"
-                        alt=""
                       />
                     </a>
-                    <a class="m-i-s-i-imglink" href="#">
+                    <a
+                      href="https://www.goodfreephotos.com/cache/united-states/alaska/other-alaska/donoho-basin-landscape_200_w200_h200_cw200_ch200_thumb.jpg?cached=1558209784"
+                      class="js-smartPhoto m-i-s-i-imglink"
+                      data-caption="4"
+                      data-id="4"
+                      data-group="screens"
+                    >
                       <img
                         class="m-i-s-i-i-img"
                         src="https://www.goodfreephotos.com/cache/united-states/alaska/other-alaska/donoho-basin-landscape_200_w200_h200_cw200_ch200_thumb.jpg?cached=1558209784"
-                        alt=""
                       />
                     </a>
-                    <a class="m-i-s-i-imglink" href="#">
+                    <a
+                      href="https://pp.userapi.com/c841323/v841323250/46a7e/1XDmu9WxJL4.jpg?ava=1"
+                      class="js-smartPhoto m-i-s-i-imglink"
+                      data-caption="5"
+                      data-id="5"
+                      data-group="screens"
+                    >
                       <img
                         class="m-i-s-i-i-img"
                         src="https://pp.userapi.com/c841323/v841323250/46a7e/1XDmu9WxJL4.jpg?ava=1"
-                        alt=""
                       />
                     </a>
-                    <a class="m-i-s-i-imglink" href="#">
+                    <a
+                      href="https://i.pinimg.com/736x/fb/b8/e8/fbb8e8d9532f8abb13af44e440b664c1--alaska-adventures-juneau-alaska.jpg"
+                      class="js-smartPhoto m-i-s-i-imglink"
+                      data-caption="6"
+                      data-id="6"
+                      data-group="screens"
+                    >
                       <img
                         class="m-i-s-i-i-img"
                         src="https://i.pinimg.com/736x/fb/b8/e8/fbb8e8d9532f8abb13af44e440b664c1--alaska-adventures-juneau-alaska.jpg"
-                        alt=""
                       />
                     </a>
                   </div>
@@ -260,4 +298,10 @@
       </footer>
     </div>
   </body>
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      new SmartPhoto(".js-smartPhoto");
+    });
+  </script>
+  <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
 </html>
